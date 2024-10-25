@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contatos</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Lista de Contatos</h1>
+            <button id="toggleThemeBtn">Trocar Tema</button>
+        </header>
+        <div class="form-container">
+            <h2>Cadastrar Contato</h2>
+            <input type="text" id="nameInput" placeholder="Nome">
+            <input type="tel" id="phoneInput" placeholder="Telefone">
+            <input type="email" id="emailInput" placeholder="Email">
+            <label>
+                <input type="checkbox" id="favoriteInput"> Favorito
+            </label>
+            <input type="text" id="imageInput" accept="image/*" placeholder="URL Imagem">
+            <button onclick="addContact()">Adicionar Contato</button>
+        </div>
+
+        <section id="cardContainer" class="card-container"></section>
+    </div>
+    <script src="./js/script.js"></script>
+</body>
+</html>
